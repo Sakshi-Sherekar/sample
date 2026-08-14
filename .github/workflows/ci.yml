@@ -36,7 +36,7 @@ jobs:
 
       - name: Login to ECR
         id: ecr-login
-        uses: aws-actions/amazon-ecr-login@v2
+        uses: aws-actions/amazon-ecr-login@2.1.6
 
       - name: Build image
         env:
