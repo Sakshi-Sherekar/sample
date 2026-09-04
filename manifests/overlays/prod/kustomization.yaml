@@ -3,9 +3,6 @@ kind: Kustomization
 resources:
 - ../../base
 images:
-- name: 007427784670.dkr.ecr.ap-south-1.amazonaws.com/sample-app
-  newName: 007427784670.dkr.ecr.ap-south-1.amazonaws.com/sample-app
-  newTag: 05868d7
 - name: 007427784670.dkr.ecr.us-east-1.amazonaws.com/sample-app
   newName: 007427784670.dkr.ecr.us-east-1.amazonaws.com/sample-app
-  newTag: 88b857b
+  newTag: 05868d7
