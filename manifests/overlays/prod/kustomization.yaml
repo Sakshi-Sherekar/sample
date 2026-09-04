@@ -5,4 +5,4 @@ resources:
 images:
 - name: 007427784670.dkr.ecr.us-east-1.amazonaws.com/sample-app
   newName: 007427784670.dkr.ecr.us-east-1.amazonaws.com/sample-app
-  newTag: ff2614d
+  newTag: 279030d
