@@ -11,7 +11,7 @@ permissions:
   contents: write   # to commit updated manifest back
 
 env:
-  AWS_REGION: ap-south-1
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: sample-app
   EKS_NAMESPACE: default
 
@@ -80,7 +80,7 @@ jobs:
       - name: Update image tag
         run: |
           cd manifests/overlays/prod
-          kustomize edit set image 007427784670.dkr.ecr.ap-south-1.amazonaws.com/sample-app=007427784670.dkr.ecr.ap-south-1.amazonaws.com/sample-app:${{ needs.build-and-push.outputs.image_tag }}
+          kustomize edit set image 007427784670.dkr.ecr.us-east-1.amazonaws.com/sample-app=007427784670.dkr.ecr.us-east-1.amazonaws.com/sample-app:${{ needs.build-and-push.outputs.image_tag }}
 
       - name: Commit and push changes
         run: |
